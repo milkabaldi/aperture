@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react'
+
+import { Studios, Whatwedo, Toolsweuse, Leafs, Pastclients, Hima, Needphoto, Footer } from './container'
+import { Navbar, Amazingly, } from './components';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <Navbar />
+        <Studios />
+        <Whatwedo />
+        <Amazingly  name='Sunset at Mount Fuji' txt='Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.' />
+        <Toolsweuse />
+        <Leafs />
+        <Pastclients />
+        <Hima />
+        <Needphoto />
+        <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,31 @@
+.app__header{
+    text-align: center;
+    min-width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding: 2rem 4rem;
+    position: relative;
+    
+}
+.app__header-info{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+
+    padding-bottom: 4.5rem;
+}
+
+@media screen and (max-width: 650px) {
+    .app__header {
+        padding: 2rem 1rem;
+    }
+    .app__header-info {
+        justify-content: center;
+    }
+}

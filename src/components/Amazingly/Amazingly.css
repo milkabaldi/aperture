@@ -1,0 +1,32 @@
+.app__amazingly{
+    min-width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.app__amazingly-txt{
+    max-width: 300px;
+    margin-right: 3rem;
+}
+.app__amazingly-txt h2{
+font-size: 1rem;
+}
+.app__amazingly-txt p{
+    color: var(--color-gray);
+}
+
+@media screen and (max-width: 650px){
+
+    .app__amazingly-txt{
+        max-width: 100%;
+        margin-right: 0;
+        padding: 2rem;
+    }
+
+  }

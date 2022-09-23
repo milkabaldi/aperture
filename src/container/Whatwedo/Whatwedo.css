@@ -1,0 +1,71 @@
+.app__whatwedo {
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 2rem;
+  position: relative;
+
+}
+.app__whatwedo-title {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+.app__whatwedo-blocks {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  width: 1100px;
+  margin: 0 auto;
+
+}
+.app__whatwedo-blocks_info {
+  /* margin-bottom: 1rem; */
+  position: relative;
+}
+.app__whatwedo-blocks_info img {
+  max-width: 100%;
+  height: 100%;
+}
+.app__whatwedo-blocks_info-txt {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  color: var(--color-white);
+  padding: 2rem 2rem;
+}
+
+@media screen and (max-width: 1150px) { 
+  .app__whatwedo-blocks{
+    max-width: 100%;
+  }
+  .app__whatwedo-blocks {
+    gap: 0.5rem;
+  
+  }
+  }
+
+  @media screen and (max-width: 800px) { 
+    .app__whatwedo-blocks{
+      grid-template-columns: 1fr;
+      
+    }
+    .app__whatwedo-blocks_info{
+      max-width: 575px;
+      margin: 0 auto;
+    }
+    .app__whatwedo-blocks_info-txt{
+      padding: 1rem;
+    }
+  }
+
+@media screen and (max-width: 650px) { 
+  
+  .app__whatwedo-blocks_info-txt{
+    padding: 1rem;
+  }
+  .app__whatwedo-blocks_info-txt p{
+    line-height: normal;
+  }
+}

@@ -1,0 +1,41 @@
+.app__toolsweuse{
+    display: flex;
+    background-color: var(--color-black);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.app__toolsweuse-info{
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.app__toolsweuse-info h2{
+    font-size: 2rem;
+}
+.app__toolsweuse-image{
+    max-width: 100%;
+}
+
+.app__toolsweuse-image img{
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1150px){
+    .app__toolsweuse-info{
+        max-width: 50%;
+        padding: 2rem;
+    }
+  
+  }
+
+@media screen and (max-width: 800px){
+
+    .app__toolsweuse{
+        flex-direction: column;
+    }
+    .app__toolsweuse-info{
+        max-width: 100%;
+        padding: 2rem;
+    }
+  }

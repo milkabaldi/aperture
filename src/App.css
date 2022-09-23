@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+.p__opensans {
+  font-family: var(--font-base);
+  color: var(--color-white);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 14px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__forth-title {
+  font-family: var(--font-base);
+  font-size: 1.1rem;
+  color: var(--color-gray);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__third-title {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 1.53rem;
+  line-height: 30px;
+  color: var(--color-gray);
 }
+.app__second-title {
+  font-family: var(--font-base);
+  font-size: 54px;
+  color: var(--color-white);
+  letter-spacing: 6px;
+  font-weight: 400;
+}
+.app__txt {
+  font-family: var(--font-base);
+  font-size: 1rem;
+  color: var(--color-gray);
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.app__btn {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 10px;
+  background: var(--color-white);
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 0;
+  margin-top: 1.2rem;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+
+
+.app__btn-black{
+  background: var(--color-black);
+  color: var(--color-white);
+}
+.app__title-section {
+  font-family: var(--font-base);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+.flex__center {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 650px){
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  .app__second-title {
+    font-size: 2.3rem;
+
+}
 }
